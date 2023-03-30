@@ -1,0 +1,435 @@
+/* reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Updated font family to Open Sans */
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* style for the header section */
+.header {
+    min-height: 50vh;
+    width: 100%;
+    background-color: rgb(176, 219, 219);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* style for the navigation bar */
+nav {
+    display: flex;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* style for the navigation bar title */
+
+nav h3 {
+    color: rgb(77, 27, 13);
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+/* style for the navigation menu */
+
+.nav-menu {
+    flex: 1;
+    text-align: right;
+}
+
+/* style for each navigation menu item */
+.nav-menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 25px;
+    position: relative;
+}
+
+/* style for each navigation menu item link */
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(50, 55, 82);
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+/* style for the navigation menu item active state */
+
+.nav-menu ul li::after {
+    content: "";
+    width: 0px;
+    height: 5px;
+    background: rgb(186, 124, 30);
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: .5s;
+}
+
+/* style for the navigation menu item hover state */
+.nav-menu ul li:hover::after {
+    width: 100%;
+}
+
+/* enable smooth scrolling for HTML */
+html {
+    scroll-behavior: smooth;
+}
+
+.bio {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+/* style for the bio section heading */
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 50px;
+
+}
+
+h3 {
+    color: var(--light1);
+    font-size: 20px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+/* style for the about section text */
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(216, 168, 46);
+}
+
+/* style for the about section text */
+.about-text {
+    width: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* style for the about section image */
+.about img {
+    height: auto;
+    width: 430px;
+
+}
+
+
+
+
+.img-container {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* style for the about section image */
+
+.img-container img {
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.about-text h2 {
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+/* Styling for card section */
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h3 {
+    flex: 1 1;
+    padding: 5rem;
+    font-size: 40px;
+    text-align: right;
+    min-width: max-content;
+    align-self: center;
+}
+
+.content {
+    flex: 2 1;
+    padding: 7%;
+    min-width: 300px;
+
+}
+
+.content img {
+    height: 400px;
+    width: auto;
+}
+
+/* Styling for work section */
+
+#work {
+    background-color: rgb(73, 149, 124);
+}
+
+#work h3 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: bisque;
+}
+
+/* Styling for  projects */
+.work-projects {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.project1 {
+    color: white;
+    background-image: url("assets/pro5.jpeg");
+    border: solid 5px rgb(76, 104, 120);
+    height: 170px;
+    width: 100%;
+
+}
+
+.project1 h4 {
+    font-size: 30px;
+    position: relative;
+    top: 30%;
+    left: 40%;
+}
+
+
+
+.project1:hover {
+    opacity: 50%;
+    /*make project one change opacity */
+    border: solid 5px red;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project2,
+.project3,
+.project4,
+.project5 {
+    color: yellow;
+    background-color: black;
+    border: solid 5px cornflowerblue;
+    height: 150px;
+    width: 48.5%;
+}
+
+
+.project2 {
+    background-image: url(assets/pro6.webp);
+}
+
+.project3 {
+    background-image: url(assets/pro2.jpeg);
+}
+
+.project4 {
+    background-image: url(assets/pro3.jpeg);
+}
+
+.project5 {
+    background-image: url(assets/pro4.jpeg);
+}
+
+.project2 h4,
+.project3 h4,
+.project4 h4,
+.project5 h4 {
+    font-size: 30px;
+    position: relative;
+    top: 40%;
+    left: 40%;
+
+
+}
+
+h4 {
+
+    width: 130px;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+    opacity: 50%;
+    /*make project one change opacity */
+    border: solid 5px red;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(219, 145, 54);
+    border-bottom: solid 3px black;
+    margin-right: 10%;
+
+}
+
+.content p {
+    font-size: 50px;
+    color: red;
+}
+
+/* footer display none */
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    display: none;
+}
+
+.footer h4 {
+    font-size: 20px;
+    display: none;
+}
+
+
+/* Media queries for smaller screens */
+
+
+@media screen and (max-width: 863px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: wheat;
+    }
+
+    .header-links {
+        padding: 2%;
+    }
+
+    body {
+        font-size: 10 px;
+    }
+
+    h3 {
+        margin: 0;
+        color: var(--dark2);
+        justify-content: space-around;
+
+    }
+
+    #profile-photo {
+        display: none;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        background: #fff;
+
+    }
+
+    section h3 {
+        font-size: 40px;
+        text-align: center;
+        min-width: max-content;
+        align-self: center;
+    }
+
+    .content {
+        flex: 2 1;
+        padding: 1rem;
+        min-width: 300px;
+        border-left: none;
+    }
+
+    .project2,
+    .project3,
+    .project4,
+    .project5 {
+        color: rgb(0, 221, 255);
+        background-color: black;
+        border: solid 5px yellow;
+        height: 150px;
+        padding: 10px;
+        width: 94%;
+
+    }
+
+
+}
