@@ -57,7 +57,7 @@ This is a digital resume created using HTML and CSS. The purpose of this project
 
 ## Screenshots :
 
-![Digital-resume](assets/screencapture-mdrashed30-github-io-Md-Resume-2023-08-31-21_23_49.png)
+![Digital-resume](assets/screenshot.png)
 
 <hr>
 
